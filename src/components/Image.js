@@ -36,14 +36,14 @@ const Image = () => {
         <div key={image.id}>
           <a href="https://www.metro.tokyo.lg.jp/">
             <div id="img">
-              <img
-                id={`tokyo-${image.id}`}
-                src="tokyo.jpg"
-                alt="Tokyo, Shinjuku"
-                title="Tokyo, Shinjuku"
-                width={image.width}
-                height={image.height}
-              />
+            <img
+            id={`tokyo-${image.id}`}
+            src={process.env.PUBLIC_URL + '/images/tokyo.jpg'}
+            alt="Tokyo, Shinjuku"
+            title="Tokyo, Shinjuku"
+            width={image.width}
+            height={image.height}
+          />
             </div>
           </a>
         </div>
